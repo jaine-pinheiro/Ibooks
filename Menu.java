@@ -78,8 +78,8 @@ public class Menu {
 		System.out.println("Selecione o Id do livro: ");
 		int opcaoId = 0;
 		try {
-			Character IdDoLivro = sc.next().charAt(0);
-			opcaoId = Integer.parseInt(IdDoLivro.toString());
+			String IdDoLivro = sc.next();
+			opcaoId = Integer.parseInt(IdDoLivro);
 		} catch (Exception e) {
 			throw new IllegalArgumentException("Id invalido. Digite um valor inteiro");
 		}
